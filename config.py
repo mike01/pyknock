@@ -29,13 +29,13 @@ def condition3(pkt):
 def action_openport(pkt):
 	print("action to open port!")
 	os.system("iptables -L")
-	# iptables -A INPUT -s %IP% -p tcp --dport 22 -j ACCEPT
+	# "iptables -A INPUT -s %s -p tcp --dport 22 -j ACCEPT" % pkt[ip.IP].src_s
 
 
 def action_closeport(pkt):
 	print("action to close port!")
 	os.system("iptables -L")
-	# iptables -D INPUT -s %IP% -p tcp --dport 22 -j ACCEPT
+	# "iptables -D INPUT -s %s -p tcp --dport 22 -j ACCEPT" % pkt[ip.IP].src_s
 
 # Conditions to check one after another.
 # Last element is the action to execute if all conditions matched.
