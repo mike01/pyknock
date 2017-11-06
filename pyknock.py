@@ -104,7 +104,7 @@ class KnockLogic(object):
 				# -1 because last element is action callback
 				if obj._state_idx >= len(obj._trigger_strategy_active) - 1:
 					logger.info("triggering action!")
-					obj._trigger_strategy_active[-1]()
+					obj._trigger_strategy_active[-1](pkt)
 					KnockLogic._reset_condition(obj)
 			except socket.timeout:
 				# try next packet

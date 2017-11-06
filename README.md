@@ -20,7 +20,7 @@ Just download/unpack
   * Send knock sequence via client (e.g. hping)
 
 ### Example
-The following example callflow is used to open and again close a SSH port.
+The following example callflow is used to open and again close a SSH port in a whitelisted firewall configuration:
 
   * Client sends two TCP packet with target port 1337 and 1338 and a third packet with IP id 69
   * Server detects sequence and adds iptables rules to open TCP-port 22

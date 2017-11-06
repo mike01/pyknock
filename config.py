@@ -26,14 +26,16 @@ def condition3(pkt):
 	#return pkt[ip.IP].id == 123
 
 # Actions to perform if all conditions in a sequence matched
-def action_openport():
+def action_openport(pkt):
 	print("action to open port!")
 	os.system("iptables -L")
+	# iptables -A INPUT -s %IP% -p tcp --dport 22 -j ACCEPT
 
 
-def action_closeport():
+def action_closeport(pkt):
 	print("action to close port!")
 	os.system("iptables -L")
+	# iptables -D INPUT -s %IP% -p tcp --dport 22 -j ACCEPT
 
 # Conditions to check one after another.
 # Last element is the action to execute if all conditions matched.
