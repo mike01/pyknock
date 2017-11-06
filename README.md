@@ -1,8 +1,8 @@
 ### General information
-Pyknock is a Python based ultra flexible port knocking server.
+Pyknock is a Python based ultra flexible port knocking daemon.
 The Pyknock deamon listens for a special knock sequence of packets and
 triggers an action if the sequence matches. Knock sequences and actions
-are defined in simple python script named `config.py` (see example).
+are defined in simple python script named (see `config.py`).
 Rules are not limited to UDP/TCP ports, any readable network value can
 be used for this like IP ids, IP source addresses, packet contents, checksums etc.
 
