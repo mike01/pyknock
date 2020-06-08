@@ -1,3 +1,6 @@
+# <span style="color:red">Please note: This respository has become staled due to relocation to GitLab. Visit https://gitlab.com/mike01/ for up-to-date versions.</span>
+
+
 ### General information
 Pyknock is a Python based ultra flexible port knocking daemon.
 The Pyknock daemon listens for a special knock sequence of packets and
