@@ -11,7 +11,7 @@ be used for this like IP ids, IP source addresses, packet contents, checksums et
 
 ### Prerequisites
 - [Python 3.x](https://www.python.org/)
-- [Pypacker](https://github.com/mike01/pypacker)
+- [Pypacker](https://gitlab.com/mike01/pypacker)
 
 ### Installation
 Just download/unpack
